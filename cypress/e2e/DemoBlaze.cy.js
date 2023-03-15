@@ -6,6 +6,7 @@ describe("Demo Blaze Automation", () => {
     before(()=>{
         cy.fixture("demoBlaze_NewMessage.json").then((data)=>{
             userData = data;
+            
         })
     })
 
