@@ -1,0 +1,43 @@
+function doubleNumberValue(x) {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(x*2)
+        }, 2000)
+    })
+}
+doubleNumberValue(6)
+.then(result=>console.log(result))
+
+function addPromise(x){
+    return new Promise(resolve =>{
+        doubleNumberValue(10).then((a)=>{
+            doubleNumberValue(20).then((b)=>{
+                doubleNumberValue(30).then((c)=>{
+                    resolve(x+a+b+c);
+                })
+            })
+        })
+    })
+}
+
+// addPromise(9).then(r=>{
+//     console.log(r)
+// })
+
+function doubleNumberValue2(x){
+    return new Promise((resolve)=>{
+        setTimeout(() => {
+            resolve(x*2)
+        }, 2000);
+    })
+}
+
+async function addNumber(x){
+    const a = await doubleNumberValue2(10)
+    const b = await doubleNumberValue2(20)
+    const c = await doubleNumberValue2(30)
+    return x+a+b+c;
+}
+addNumber(10).then((r)=>{
+    console.log(r)
+})
