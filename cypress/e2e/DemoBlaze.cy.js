@@ -2,6 +2,7 @@ describe("Demo Blaze Automation", () => {
   let userdata
   let mysession
 
+  //Comment 3
   before(function () {
     cy.fixture('demoBlaze_NewMessage.json').then(function (data) {
       userdata = data;
