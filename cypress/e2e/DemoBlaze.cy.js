@@ -1,9 +1,7 @@
 describe("Demo Blaze Automation", () => {
   let userdata
   let mysession
-
 //Making this change in Branch - Change001
-
 //2nd Change in Branch - Change002 --1
 //pppp000
 
