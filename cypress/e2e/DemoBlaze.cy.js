@@ -2,7 +2,7 @@ describe("Demo Blaze Automation", () => {
   let userdata
   let mysession
 //Making this change in Branch - Change00
-//2nd Change in Branch - Change002
+//2nd Change in Branch - Change002 --1
   before(function () {
     cy.fixture('demoBlaze_NewMessage.json').then(function (data) {
       userdata = data;
