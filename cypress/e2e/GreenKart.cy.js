@@ -63,6 +63,7 @@ describe("GreenKart portal - Automation Practice", () => {
             }
         })
     })
+    
 
     xit("Verify Header links", () => {
         cy.get("div.container div.cart a").then((ele) => {
