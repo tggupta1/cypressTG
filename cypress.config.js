@@ -15,7 +15,7 @@ module.exports = defineConfig({
   },
   "watchForFileChanges": false,
   "video": false,
-  "defaultCommandTimeout":10000
+  //"defaultCommandTimeout":10000
   // "viewportWidth":360,
   // "viewportHeight":640
 
